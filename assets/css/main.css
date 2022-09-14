@@ -3603,8 +3603,8 @@ body.is-menu-visible #menu .inner {
 
 
 #banner {
-	padding: 30em 0 8.25em 0;
-	background-image: url("/images/banner.png");
+	padding: 20em 0 8.25em 0;
+	background-image: url("/images/banner.webp");
 	background-size: cover;
 	background-position: bottom -100px left 500px;
 	margin-bottom: -6.5em;
@@ -3617,10 +3617,10 @@ body.is-menu-visible #menu .inner {
 }
 
 .form {
-	height: 1200px;
+	height: 775px;
 	width: 35%;
-	margin-top: -800px;
-	position:absolute;
+	margin-top: -535px;
+	position: absolute;
 	background-color: #ffffff;
 	box-shadow: 10px 10px 8px 0 rgba(0,0,0,0.2);
 	
