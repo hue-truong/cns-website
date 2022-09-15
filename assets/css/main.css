@@ -3516,14 +3516,11 @@ body.is-menu-visible #menu .inner {
 }
 
 /* Banner */
-
-
 #banner .inner {
-	margin: 0 auto;
-	width: 55em;
-}
-#hero {
-	align-content: center;
+	position: absolute;
+	left:0;
+	top:0;
+	margin: -50px 0 0 0;
 }
 
 #banner .logo {
@@ -3536,7 +3533,7 @@ body.is-menu-visible #menu .inner {
 	-ms-transform: translateY(0);
 	transform: translateY(0);
 	opacity: 1;
-	margin: 0 0 1.3em 0;
+	margin:  0 1.3em 0;
 }
 
 #banner .logo .icon {
@@ -3606,30 +3603,17 @@ body.is-menu-visible #menu .inner {
 	padding: 20em 0 8.25em 0;
 	background-image: url("/images/banner.webp");
 	background-size: cover;
-	background-position: bottom -100px left 500px;
+	background-position: bottom;
 	margin-bottom: -6.5em;
 	/* Set a specific height */
-	min-height: 500px;
+	min-height: 400px;
 
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
 
-.form {
-	height: 775px;
-	width: 35%;
-	margin-top: -535px;
-	position: absolute;
-	background-color: #ffffff;
-	box-shadow: 10px 10px 8px 0 rgba(0,0,0,0.2);
-	
-}
-
-@media screen and (max-width: 1730px) {
-	.form{
-		visibility: hidden;
-	}
+@media screen and (max-width: 980px) {
 	#banner {
 		background-position: bottom;
 		padding: 12em 3em 12.375em 3em;
@@ -3638,14 +3622,12 @@ body.is-menu-visible #menu .inner {
 
 	#banner .inner {
 		width: 100%;
+		margin: 0;
 	}
 
 }
 
 @media screen and (max-width: 736px) {
-	.form{
-		visibility: hidden;
-	}
 	#banner {
 		background-position: bottom;
 		padding: 5em 2em 4.25em 2em;
@@ -3881,7 +3863,7 @@ body.is-preload #banner p {
 }
 
 .wrapper.style4 {
-	background-color: #454858;
+	background-color: #b51212;
 }
 
 .wrapper.style4:before,
@@ -3918,8 +3900,7 @@ body.is-preload #banner p {
 	background-color: #2b2b2b;
 }
 
-.wrapper.style6:before,
-.wrapper.style6:after {
+.wrapper.style6:before{
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232b2b2b' /%3E%3C/svg%3E");
 }
 
@@ -3938,10 +3919,6 @@ body.is-preload #banner p {
 .wrapper.spotlight:after {
 	position: absolute;
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232b2b2b' /%3E%3C/svg%3E");
-}
-
-
-.wrapper.spotlight:after {
 	box-shadow: inset 0 -1px 0 0 #2b2b2b, 0 1px 0 0 #2b2b2b;
 }
 
@@ -4062,11 +4039,13 @@ body.is-preload #banner p {
 	background-color: #e1e1e1;
 }
 
-.wrapper.spotlight.style6:before,
-.wrapper.spotlight.style6:after {
+.wrapper.spotlight.style6:before{
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23e1e1e1' /%3E%3C/svg%3E");
 }
 
+.wrapper.spotlight.style6:after {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' fill='%23e1e1e1' /%3E%3C/svg%3E");
+}
 .wrapper.spotlight.style6:before {
 	box-shadow: inset 0 -1px 0 0 #e1e1e1, 0 1px 0 0 #e1e1e1;
 }
@@ -4075,6 +4054,27 @@ body.is-preload #banner p {
 	box-shadow: inset 0 -1px 0 0 #e1e1e1, 0 1px 0 0 #e1e1e1;
 }
 
+.wrapper.alt.style7 {
+	background-color: #2b2b2b;
+}
+
+.wrapper.alt.style7:before{
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232b2b2b' /%3E%3C/svg%3E");
+}
+
+.wrapper.alt.style7:after {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232b2b2b' /%3E%3C/svg%3E");
+}
+.wrapper.alt.style7:before {
+	box-shadow: inset 0 -1px 0 0 #2b2b2b, 0 1px 0 0 #2b2b2b;
+}
+
+.wrapper.alt.style7:after {
+	box-shadow: inset 0 -1px 0 0 #2b2b2b, 0 1px 0 0 #2b2b2b;
+}
+.wrapper.alt.style8:before{
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23ffffff' /%3E%3C/svg%3E");
+}
 @media screen and (max-width: 980px) {
 
 	.wrapper {
@@ -4177,6 +4177,21 @@ body.is-preload #banner p {
 
 /* Footer */
 #footer {
+
+	background-color: #252525;
+	margin-top: -6.5em;
+	padding-top: 6.5em;
+	
+	padding: 0em 0 0em 0;
+	background-image: url("/images/serene.jpg");
+	background-size: cover;
+	margin-bottom: -6.5em;
+	/* Set a specific height */
+	min-height: 500px;
+	
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 	color:rgba(255, 255, 255, 0.025)
 }
 #footer .inner {
@@ -4197,11 +4212,12 @@ body.is-preload #banner p {
 }
 
 #footer .inner>* {
+	margin: 5em 0 0 0;
 	width: 100%;
 }
 
 #footer .inner form {
-	margin: 0 3em 0 0;
+	margin: 0 5em 0 0;
 	width: calc(50% - 1.5em);
 }
 
@@ -4236,16 +4252,6 @@ body.is-preload #banner p {
 
 #footer .inner .copyright li a {
 	color: inherit;
-}
-
-@media screen and (max-width: 1280px) {
-
-	#footer {
-		background-color: #252525;
-		margin-top: -6.5em;
-		padding-top: 6.5em;
-	}
-
 }
 
 @media screen and (max-width: 980px) {
