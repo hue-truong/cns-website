@@ -3602,7 +3602,7 @@ body.is-menu-visible #menu .inner {
 
 #banner {
 	padding: 20em 0 8.25em 0;
-	background-image: url("/images/banner.webp");
+	background-image: url("../../images/banner.webp");
 	background-size: cover;
 	background-position-y: -150px;
 	margin-bottom: -6.5em;
@@ -3616,7 +3616,7 @@ body.is-menu-visible #menu .inner {
 
 #banner2 {
 	padding: 20em 0 8.25em 0;
-	background-image: url("/images/chairs.JPG");
+	background-image: url("../../images/chairs.JPG");
 	background-size: cover;
 	background-position-y: -150px;
 	background-position-x: -50px;
@@ -4213,7 +4213,7 @@ body.is-preload #banner p {
 	padding-top: 6.5em;
 	
 	padding: 0em 0 0em 0;
-	background-image: url("/images/serene.jpg");
+	background-image: url("../../images/serene.jpg");
 	background-size: cover;
 	margin-bottom: -6.5em;
 	/* Set a specific height */
