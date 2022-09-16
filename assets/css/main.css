@@ -219,7 +219,7 @@ select,
 textarea {
 	color: #ffffff;
 	font-family: Helvetica, 'Times New Roman', Times, serif;
-	font-size: 20pt;
+	font-size: 14pt;
 	font-weight: 300;
 	line-height: 1.65;
 }
@@ -230,7 +230,7 @@ textarea {
 	input,
 	select,
 	textarea {
-		font-size: 13pt;
+		font-size: 18pt;
 	}
 
 }
@@ -263,7 +263,7 @@ textarea {
 	input,
 	select,
 	textarea {
-		font-size: 12pt;
+		font-size: 14pt;
 	}
 
 }
@@ -274,7 +274,7 @@ textarea {
 	input,
 	select,
 	textarea {
-		font-size: 12pt;
+		font-size: 18pt;
 	}
 
 }
@@ -3616,10 +3616,10 @@ body.is-menu-visible #menu .inner {
 
 #banner2 {
 	padding: 20em 0 8.25em 0;
-	background-image: url("../../images/chairs.JPG");
+	background-image: url("../../images/serene1.jpg");
 	background-size: cover;
 	background-position-y: -150px;
-	background-position-x: -50px;
+	background-position-x: -100px;
 	margin-bottom: -10em;
 	/* Set a specific height */
 	min-height: 400px;
@@ -3658,7 +3658,9 @@ body.is-menu-visible #menu .inner {
 	}
 
 	#banner .logo {
-		margin: 0 0 10em 0;
+		width: 90%;
+		margin: auto;
+		margin-top: -10%
 	}
 
 	#banner .logo .icon {
@@ -3737,6 +3739,7 @@ body.is-preload #banner p {
 #logo-header {
 	width: 10em;
 	margin: -1.6em 0 0 -1em;
+	padding-bottom: -10em;
 }
 
 @media screen and (max-width: 1280px) {
@@ -4183,7 +4186,7 @@ body.is-preload #banner p {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 665px) {
 
 	.wrapper.spotlight .inner {
 		display: block;
@@ -4207,7 +4210,7 @@ body.is-preload #banner p {
 
 /* Footer */
 #footer {
-
+	
 	background-color: #252525;
 	margin-top: -6.5em;
 	padding-top: 6.5em;
@@ -4297,7 +4300,8 @@ body.is-preload #banner p {
 @media screen and (max-width: 980px) {
 
 	#footer {
-		background-position-x: -57em;
+		background-attachment: local;
+		background-position-x: center;
 		margin-top: -4.75em;
 		padding-top: 4.75em;
 	}
