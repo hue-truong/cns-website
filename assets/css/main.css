@@ -241,7 +241,7 @@ textarea {
 	input,
 	select,
 	textarea {
-		font-size: 12pt;
+		font-size: 14pt;
 	}
 
 }
@@ -274,7 +274,7 @@ textarea {
 	input,
 	select,
 	textarea {
-		font-size: 18pt;
+		font-size: 16pt;
 	}
 
 }
@@ -3653,6 +3653,37 @@ body.is-menu-visible #menu .inner {
 	background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 1280px) {
+	#banner2 {
+		background-image: url("../../images/wood.jpg");
+		background-position-x: 0px;
+		background-attachment: local;
+		padding: 12em 3em 12.375em 3em;
+		margin-bottom: -10em;
+		min-height: 300px;
+	}
+
+	#banner .inner {
+		width: 100%;
+		margin: 0;
+	}
+
+}
+
+@media screen and (max-width: 980px) {
+	#banner {
+		background-attachment: local;
+		padding: 12em 3em 12.375em 3em;
+		margin-bottom: -10em;
+		min-height: 300px;
+	}
+
+	#banner .inner {
+		width: 100%;
+		margin: 0;
+	}
+
+}
 @media screen and (max-width: 980px) {
 	#banner {
 		background-attachment: local;
@@ -3674,11 +3705,6 @@ body.is-menu-visible #menu .inner {
 		margin-bottom: -2.5em;
 		background-position-x: -30;
 		background-position-y: 0;
-	}
-
-	#banner2 {
-		background-position-y: -175px;
-		background-position-x: -200px;
 	}
 
 	#banner .logo {
