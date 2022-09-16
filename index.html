@@ -18,10 +18,8 @@
 
 		<!-- Header -->
 		<header id="header" class="alt">
-			<h1><a href="index.html">Creative Nails & Spa</a></h1>
-			<nav>
-				<a href="#menu">Menu</a>
-			</nav>
+			<h1><a href="index.html" ><img src="/images/logowhite.png" id="logo-header"> </a></h1>
+			<nav><a href="#menu">Menu</a></nav>
 		</header>
 
 		<!-- Menu -->
@@ -33,7 +31,7 @@
 					<li><a href="services.html">Services</a></li>
 					<li><a href="https://bookings.gettimely.com/creativenailsspa/bb/book">Book Appointment</a></li>
 					<li><a href="https://www.creativenailsnspa.com/clover">Clover Rewards</a></li>
-					<li><a href="#">About Us</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
 					<li><a href="#">Sign Up For Our Newsletter!</a></li>
 				</ul>
 				<a href="#" class="close">Close</a>
@@ -42,10 +40,9 @@
 
 		<!-- Banner -->
 		<section id="banner">
-				<div class="inner">
-					<img class="logo" src="images/logo.png" alt="" style="width: 400px"/>
+			<div class="inner">
+				<img class="logo" src="images/logo.png" alt=""/>
 			</div>
-
 		</section>
 
 		<!-- Wrapper -->
@@ -56,7 +53,7 @@
 				<div class="inner">
 					<a href="https://www.creativenailsnspa.com/clover" class="image"><img src="images/clover.png" alt="" /></a>
 					<div class="content">
-						<h2 class="major">Creative X Clover Rewards</h2>
+						<h2 class="major">Creative <span style="color: green; font-weight: bold">X</span>  Clover Rewards</h2>
 						<p>Join Our Rewards Program on Clover!</p>
 						<a href="https://www.creativenailsnspa.com/clover" class="special">Learn more</a>
 					</div>
@@ -82,11 +79,11 @@
 			<!-- Three -->
 			<section id="three" class="wrapper spotlight style3">
 				<div class="inner">
-					<a href="#" class="image"><img src="images/serene.jpg" alt="" /></a>
+					<a href="serene.html" class="image"><img src="images/serene.jpg" alt="" /></a>
 					<div class="content">
 						<h2 class="major" style="color:#5b5b5b">Serene @ Park Avenue</h2>
-						<p style="color:#7f7f7f">Learn about the new addition to our Worcester location</p>
-						<a href="#" class="special" style="color:#515151">LEARN MORE</a>
+						<p style="color:#7f7f7f">Learn about the newest addition to our Worcester location</p>
+						<a href="serene.html" class="special" style="color:#515151">LEARN MORE</a>
 					</div>
 				</div>
 			</section>
@@ -97,7 +94,7 @@
 					<div class="content">
 
 						<h2 class="major" style="color:#5b5b5b">Services</h2>
-						<p style="color:#5b5b5b">Your satisfaction is our top priority. Our highly experienced and skillful technicians will lead you to a new level of comfort...</p>
+						<p style="color:#5b5b5b">Your satisfaction is our top priority. Our experienced and skillful technicians will lead you to a new level of comfort.</p>
 						<a href="services.html" class="special" style="color:#5b5b5b">See Services</a>
 
 
@@ -106,12 +103,26 @@
 			</section>
 			<section id="three" class="wrapper spotlight style6">
 				<div class="inner">
-					<a href="#" class="image"><img src="images/paper-plane.svg" alt="" /></a>
+					<a class="image"><img src="images/paper-plane.svg" alt="" /></a>
 					<div class="content">
-						<h2 class="major" style="color:#5b5b5b">Mailing List</h2>
+						<h2 class="major" style="color:#7f7f7f">Mailing List</h2>
 						<p style="color:#7f7f7f">Join our mailing list and we'll keep you updated on
 							promos, special events, discounts, updates, and more! </p>
-						<a href="#" class="special" style="color:#515151">SUBSCRIBE NOW</a>
+							<form method="post" action="#">
+								<div class="fields" >
+									<div class="field">
+										<label for="name" style="color:#7f7f7f; ">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email" style="color:#7f7f7f">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="SUBSRIBE NOW" /></li>
+								</ul>
+							</form>
 					</div>
 				</div>
 			</section>
@@ -121,7 +132,7 @@
 					<h2 class="major">Come Visit Us</h2>
 					<section class="features">
 						<article>
-							<a href="#" class="image"><img src="images/parkave.webp" alt="" /></a>
+							<a class="image"><img src="images/parkave.webp" alt="" /></a>
 							<h3 class="major">Worcester</h3>
 							<ul class="contact">
 								<li class="icon solid fa-home">
@@ -135,7 +146,7 @@
 							</ul>
 						</article>
 						<article>
-							<a href="#" class="image"><img src="images/shrewsbury.webp" alt="" /></a>
+							<a class="image"><img src="images/shrewsbury.webp" alt="" /></a>
 							<h3 class="major">Shrewsbury</h3>
 							<ul class="contact">
 								<li class="icon solid fa-home">
@@ -148,7 +159,7 @@
 							</ul>
 						</article>
 						<article>
-							<a href="#" class="image"><img src="images/milbury.webp" alt="" /></a>
+							<a class="image"><img src="images/milbury.webp" alt="" /></a>
 							<h3 class="major">Blackstone Valley</h3>
 							<ul class="contact">
 								<li class="icon solid fa-home">
@@ -168,6 +179,7 @@
 
 		<!-- Footer -->
 		<section id="footer">
+			<div class="overlay"></div>
 			<div class="inner">
 				<h2 class="major">Get in touch</h2>
 				<form method="post" action="#">

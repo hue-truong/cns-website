@@ -2257,6 +2257,7 @@ form>.fields>.field {
 	flex-shrink: 0;
 	padding: 1.5em 0 0 1.5em;
 	width: calc(100% - 1.5em);
+	color:blue;
 }
 
 form>.fields>.field.half {
@@ -2300,7 +2301,7 @@ form>.fields>.field.quarter {
 label {
 	color: #ffffff;
 	display: block;
-	font-family: Helvetica, 'Times New Roman', Times, serif;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 0.8em;
 	font-weight: 700;
 	letter-spacing: 0.1em;
@@ -2322,7 +2323,7 @@ textarea {
 	border-radius: 5px;
 	border: none;
 	border: solid 2px rgba(255, 255, 255, 0.125);
-	color: inherit;
+	color: white;
 	display: block;
 	outline: 0;
 	padding: 0 1em;
@@ -3398,7 +3399,7 @@ button:disabled,
 	-ms-user-select: none;
 	user-select: none;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	background: rgba(46, 49, 65, 0.8);
+	background: rgba(138, 132, 137, 0.8);
 	cursor: default;
 	height: 100%;
 	left: 0;
@@ -3533,7 +3534,7 @@ body.is-menu-visible #menu .inner {
 	-ms-transform: translateY(0);
 	transform: translateY(0);
 	opacity: 1;
-	margin:  0 1.3em 0;
+	width: 28%;
 }
 
 #banner .logo .icon {
@@ -3603,8 +3604,23 @@ body.is-menu-visible #menu .inner {
 	padding: 20em 0 8.25em 0;
 	background-image: url("/images/banner.webp");
 	background-size: cover;
-	background-position: bottom;
+	background-position-y: -150px;
 	margin-bottom: -6.5em;
+	/* Set a specific height */
+	min-height: 400px;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+#banner2 {
+	padding: 20em 0 8.25em 0;
+	background-image: url("/images/chairs.JPG");
+	background-size: cover;
+	background-position-y: -150px;
+	background-position-x: -50px;
+	margin-bottom: -10em;
 	/* Set a specific height */
 	min-height: 400px;
 
@@ -3615,9 +3631,10 @@ body.is-menu-visible #menu .inner {
 
 @media screen and (max-width: 980px) {
 	#banner {
-		background-position: bottom;
+		background-position-y: -200px;
 		padding: 12em 3em 12.375em 3em;
 		margin-bottom: -4.75em;
+		min-height: 550px;
 	}
 
 	#banner .inner {
@@ -3629,13 +3646,19 @@ body.is-menu-visible #menu .inner {
 
 @media screen and (max-width: 736px) {
 	#banner {
-		background-position: bottom;
 		padding: 5em 2em 4.25em 2em;
 		margin-bottom: -2.5em;
+		background-position-x: -200px;
+		background-position-y: -75px;
+	}
+
+	#banner2 {
+		background-position-y: -175px;
+		background-position-x: -200px;
 	}
 
 	#banner .logo {
-		margin: 0 0 1em 0;
+		margin: 0 0 10em 0;
 	}
 
 	#banner .logo .icon {
@@ -3711,8 +3734,12 @@ body.is-preload #banner p {
 	text-transform: uppercase;
 }
 
-@media screen and (max-width: 1280px) {
+#logo-header {
+	width: 10em;
+	margin: -1.6em 0 0 -1em;
+}
 
+@media screen and (max-width: 1280px) {
 	#wrapper>header {
 		padding: 9em 0 6.25em 0;
 		background-color: #2b2b2b;
@@ -3744,7 +3771,10 @@ body.is-preload #banner p {
 }
 
 @media screen and (max-width: 736px) {
-
+	#logo-header {
+		width: 8.6em;
+		margin: -1.6em 0 0 -1em;
+	}
 	#wrapper>header {
 		padding: 6.5em 2em 3em 2em;
 		background-size: auto,
@@ -3770,7 +3800,6 @@ body.is-preload #banner p {
 
 .wrapper:before,
 .wrapper:after {
-	position: absolute;
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' fill='%232b2b2b' /%3E%3C/svg%3E");
 }
 
@@ -3834,7 +3863,7 @@ body.is-preload #banner p {
 
 .wrapper.style2:before,
 .wrapper.style2:after {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232e3141' /%3E%3C/svg%3E");
+	background-image: transparent url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232e3141' /%3E%3C/svg%3E");
 }
 
 .wrapper.style2:before {
@@ -3851,7 +3880,7 @@ body.is-preload #banner p {
 
 .wrapper.style3:before,
 .wrapper.style3:after {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232e3141' /%3E%3C/svg%3E");
+	background-image: transparent url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232e3141' /%3E%3C/svg%3E");
 }
 
 .wrapper.style3:before {
@@ -4075,6 +4104,7 @@ body.is-preload #banner p {
 .wrapper.alt.style8:before{
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23ffffff' /%3E%3C/svg%3E");
 }
+
 @media screen and (max-width: 980px) {
 
 	.wrapper {
@@ -4194,6 +4224,16 @@ body.is-preload #banner p {
 	background-repeat: no-repeat;
 	color:rgba(255, 255, 255, 0.025)
 }
+
+#footer.overlay {
+	position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #footer .inner {
 	display: -moz-flex;
 	display: -webkit-flex;
@@ -4212,7 +4252,7 @@ body.is-preload #banner p {
 }
 
 #footer .inner>* {
-	margin: 5em 0 0 0;
+	margin: 8em 0 0 0;
 	width: 100%;
 }
 
@@ -4257,11 +4297,13 @@ body.is-preload #banner p {
 @media screen and (max-width: 980px) {
 
 	#footer {
+		background-position-x: -57em;
 		margin-top: -4.75em;
 		padding-top: 4.75em;
 	}
 
 	#footer .inner {
+		margin-top: -100px;
 		padding: 3em 3em 1em 3em;
 		display: block;
 		width: 100%;
@@ -4292,6 +4334,7 @@ body.is-preload #banner p {
 
 	#footer .inner {
 		padding: 2em 2em 0.1em 2em;
+		
 	}
 
 	#footer .inner form {

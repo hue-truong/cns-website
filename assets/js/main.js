@@ -135,5 +135,6 @@
 						$menu._hide();
 
 			});
+	 
 
 })(jQuery);
