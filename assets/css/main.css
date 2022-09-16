@@ -2986,7 +2986,7 @@ table.alt tfoot {
 
 /* Button */
 
-input[type="submit"],
+.submit,
 input[type="reset"],
 input[type="button"],
 button,
@@ -3017,6 +3017,30 @@ button,
 	text-decoration: none;
 	text-transform: uppercase;
 	white-space: nowrap;
+}
+
+.submitalt {
+	background-color: #3b3b3b;
+}
+
+.submitalt:hover{
+	background-color: #717171 !important;
+}
+
+.scolor{
+	color:#515151
+}
+
+.scolor:hover{
+	color:#fab88a !important
+}
+
+.ccolor{
+	color:#dbdbdb !important
+}
+
+.ccolor:hover{
+	color:green !important
 }
 
 input[type="submit"]:hover,
