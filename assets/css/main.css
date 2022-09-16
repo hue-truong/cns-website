@@ -3631,10 +3631,10 @@ body.is-menu-visible #menu .inner {
 
 @media screen and (max-width: 980px) {
 	#banner {
-		background-position-y: -200px;
+		background-attachment: local;
 		padding: 12em 3em 12.375em 3em;
-		margin-bottom: -4.75em;
-		min-height: 550px;
+		margin-bottom: -10em;
+		min-height: 300px;
 	}
 
 	#banner .inner {
@@ -3646,10 +3646,10 @@ body.is-menu-visible #menu .inner {
 
 @media screen and (max-width: 736px) {
 	#banner {
-		padding: 5em 2em 4.25em 2em;
+		padding: 4em 2em 4.25em 2em;
 		margin-bottom: -2.5em;
-		background-position-x: -200px;
-		background-position-y: -75px;
+		background-position-x: -30;
+		background-position-y: 0;
 	}
 
 	#banner2 {
